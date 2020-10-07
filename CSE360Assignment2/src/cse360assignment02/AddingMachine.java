@@ -7,7 +7,7 @@ package cse360assignment02;
  * <b>Note</b>: The code has been adjusted slightly because I like it to look this way rather than the way it was provided.
  * 
  * @author 		Michael Buyanin
- * @version 		1.1
+ * @version 		2.0
  * @since		October 7th, 2020
  */
 
