@@ -15,34 +15,44 @@ package cse360assignment02;
 public class AddingMachine 
 {
   private int total;
+  private String output = "0 ";
+  
   
   public AddingMachine () 
   {
     total = 0;  // not needed - included for clarity
   }
   
+  // @return		int total
   public int getTotal () 
   {
-    return 0; //This will have to be adjusted to get the private int total.
+    return total;
   }
   
+  // @param			int value
   public void add (int value) 
   {
-	  //This will have to add value to the total.
+	  total += value;
+	  output += "+ " + value + " ";
   }
 
+  // @param			int value
   public void subtract (int value) 
   {
-	  //This will have to subtract value from the total.
+	  total -= value;
+	  output += "- " + value + " ";
   }
 
+  // @return		string output
   public String toString () 
   {
-    return ""; //Converts total to a string
+    return output; 
   }
 
+  // Just clears both the total and the output string.
   public void clear() 
   {
-	  //Clears private int total.
+	  total = 0;
+	  output = "";
   }
 }
